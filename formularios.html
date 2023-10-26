@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <hr>
+    <form action="envio.php" method="POST" target="_blank">
+        <label for="usuario"></label>Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Femia Cintia" required/>
+        <small>Debe tener 9 caracteres</small>
+        <br>
+        <label for="password"></label>Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe aui tu Contraseña"required
+        <br>
+        
+        <input type="checkbox" id="condiciones" name="lenguajes" value="HTML"> HTML
+        <input type="checkbox" id="condiciones" name="lenguajes" value="CSS"> CSS
+        <input type="checkbox" id="condiciones" name="lenguajes" value="JAVA SCRIPT"> JAVASCRIPT
+        <input type="checkbox" id="condiciones" name="lenguajes" value="REACT"> REACT
+        <br>
+        <input type="radio" id="condiciones" name="lenguajes" value="HTML" required> HTML
+        <input type="radio" id="condiciones" name="lenguajes" value="CSS" required> CSS
+        <input type="radio" id="condiciones" name="lenguajes" value="JAVA SCRIPT"required> JAVASCRIPT
+        <input type="radio" id="condiciones" name="lenguajes" value="REACT"required> REACT
+        <br>
+        <label for="programando">Años programando:</label>
+        <input type="number" id="programando" name="programando" placeholder="Años programando" max="3" min="0"/>
+        <small>Debe tener 9 caracteres</small>
+        <br>
+        <label for="archivo">Subi tu curriculum:</label>
+        <input type="file" id="archivo" name="archivo" value="file" multiple/>
+        <br>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" max="2023-10-24"/>
+        <br>
+        <br>
+        <label for="opinion">Subi tu curriculum:</label>
+        <textarea id="opinion" name="opinion" placeholder="Escribi tu opinion" rows="2" cols="10"></textarea>
+        <br>
+        <br>
+        <label for="pais"> Selecciona tu pais de origen:</label>
+        <select name="pais" id="pais">
+
+        <optgroup label="Europa">
+            <option value="Marruecos">Marruecos</option>
+            <option value="Francia">Francia</option>
+        </optgroup>
+
+        <optgroup label="Amercica">
+            <option value="Argentina">Argentina</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Paraguay" selected="selected">Paraguay</option>
+        </optgroup> 
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar tus datos">
+        <input type="reset" value="Resetea el formulario">
+
+        <br><br>
+
+        <button onclick="alert"(Suscribite a mi canal)>Hazme clic</button>
+        
+
+    </form>
+</body>
+</html>
